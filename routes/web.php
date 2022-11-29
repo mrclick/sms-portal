@@ -1,7 +1,6 @@
 <?php
-use App\HomeController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,6 +11,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 
 Route::get('/', 'HomeController@show');
 Route::post('/', 'HomeController@storePhoneNumber');
